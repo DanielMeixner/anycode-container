@@ -28,6 +28,8 @@ Things are more interesting if you run, e.g. "top". Make sure you modify the com
 Command would be: top -n 1
 After url encoding: top+-n+1
 Now navigate to  http://localhost:8888/?command=top+-n+1.
+Or call to trigger a ping to a known url: http://localhost:8888/?command=ping+-w+5+www.github.com
+Hint: I f
 
 Your browser should display this:
 

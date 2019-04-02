@@ -15,9 +15,9 @@ app.get('*', function (request, response){
     var splitcommand = decodeURIComponent(command).split(" ");
     console.log(command);
     console.log(splitcommand);
-    if (splitcommand.length<1)
+    if (command==null || command=="")
     {
-       response.send("add a command to the url like ?command=ls");
+       response.send("Add a command to the url like ?command=ls");
        return;
     }
     if(splitcommand.length==1)
